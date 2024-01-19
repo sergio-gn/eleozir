@@ -1,0 +1,67 @@
+@use '../components/variables';
+
+
+@media only screen and (min-width: 1701px) {
+  html{
+    font-size: 10px;
+  }
+
+
+  .home section.ecosystem .flex.two-columns ul.flex:first-of-type li.flex{
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 1521px) and (max-width: 1700px){
+  html{
+    font-size: 9px;
+  }
+  .home section.ecosystem .flex.two-columns ul.flex:first-of-type li.flex{
+    font-size: 9px;
+  }
+}
+
+@media only screen and (min-width: 1432px) and (max-width: 1520px){
+  html{
+    font-size: 8px;
+  }
+  .home section.ecosystem .flex.two-columns ul.flex:first-of-type li.flex{
+    font-size: 8px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1431px) {
+
+  html{
+    font-size: 7px;
+  }
+  .home section.ecosystem .flex.two-columns ul.flex:first-of-type li.flex{
+    font-size: 7px;
+  }
+}
+@media only screen and (min-width: 1921px) {
+  html{
+    font-size: 12px;
+  }
+}
+//4k
+@media only screen and (min-width:3000px) {
+  html {
+    font-size: 19px;
+
+    .home section.ecosystem .flex.two-columns ul.flex:first-of-type li.flex{
+      font-size: 17px;
+    }
+  }
+}
+
+//mobile
+@media only screen and (max-width: 1023px) {
+
+  html{
+    font-size: 10px;
+  }
+
+}
+
+

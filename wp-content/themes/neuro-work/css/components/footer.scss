@@ -1,0 +1,132 @@
+@use 'variables';
+
+footer {
+  height: 24.6rem;
+  margin: 0 auto 9.3rem 0;
+  padding: 16.4rem 0 9.3rem 0;
+  background: white;
+
+  &:before {
+    content: "";
+    left: 0;
+    top: -31.5rem;
+    background: url(../../assets/substracts/footer_substract.svg) no-repeat center;
+    background-size: 82.7rem;
+    width: 82.7rem;
+    height: 32.1rem;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .contact-box {
+    z-index: 1;
+    top: -12.7rem;
+  }
+
+  .logo {
+    width: 20rem;
+    height: auto;
+    margin-bottom: -2rem;
+    max-width: 41rem;
+  }
+
+  .copyrights {
+    font: normal 400 1.4rem/190% variables.$font_main;
+  }
+  .copyrights{
+    &.mobile {
+      display: none;
+    }
+    &.desktop{
+      display: block;
+    }
+  }
+  .menu {
+    display: flex;
+    column-gap: 3rem;
+  }
+
+  .menu-footer-container {
+    padding-top: 1rem;
+
+    a {
+      @include variables.d_menu_footer;
+    }
+
+  }
+
+  .menu-social-container {
+
+    a:before {
+      font-family: variables.$icons;
+      color: black;
+      font-size: 2rem;
+    }
+  }
+}
+
+
+
+
+@include variables.media(mobile) {
+
+  footer {
+    height: auto;
+    margin: 0 auto auto auto;
+    padding-bottom: 2rem;
+    padding-top: 0;
+
+    .d_parag_23{
+      font-size: 1.8rem;
+    }
+
+    &:before {
+      display: none;
+    }
+
+    .basic-grid.space-between {
+      flex-direction: column;
+
+      .contact-box {
+        position: unset;
+        margin-bottom: 9rem;
+      }
+
+      .logo {
+        margin-bottom: 4rem;
+      }
+    }
+
+    .copyrights{
+      &.mobile {
+        display: block;
+      }
+      &.desktop{
+        display: none;
+      }
+    }
+
+    .menus {
+      align-items: flex-start;
+
+      .menu-footer-container {
+        width: 100%;
+
+        ul.menu {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          row-gap: 3rem;
+        }
+      }
+
+      .menu-social-container {
+        width: 100%;
+        margin: 5rem auto;
+
+        ul.menu {
+          column-gap: 4rem;
+        }
+      }
+    }
+  }
+}

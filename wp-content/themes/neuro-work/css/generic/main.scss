@@ -1,0 +1,66 @@
+@use '../components/variables';
+@use '../components/button';
+
+
+//Theme icons
+
+
+//Main
+@include variables.font-face('Archia','../../fonts/archia/archia-light-webfont.woff', 200, normal);
+@include variables.font-face('Archia','../../fonts/archia/archia-regular-webfont.woff', 300, normal);
+@include variables.font-face('Archia','../../fonts/archia/archia-semibold-webfont.woff', 400, normal);
+
+//Secondary
+@include variables.font-face('Montreal','../../fonts/montreal/PPNeueMontreal-Light.woff', 200, normal);
+@include variables.font-face('Montreal','../../fonts/montreal/PPNeueMontreal-Regular.woff', 300, normal);
+@include variables.font-face('Montreal','../../fonts/montreal/PPNeueMontreal-Regular.woff', 400, normal);
+@include variables.font-face('Montreal','../../fonts/montreal/PPNeueMontreal-Medium.woff', 500, normal);
+
+
+//Icons
+@include variables.font-face('Icons', '../../fonts/icons/fonts/icomoon.woff', 400, normal);
+
+
+
+.page-template-careers {
+  h1,.headline-text-button{
+    color: black !important;
+  }
+}
+//404 page
+.error404{
+  background: black;
+  #main{
+    height: 70rem;
+    padding-top: 15rem;
+    color:white;
+    p{
+      max-width: 34.5rem;
+    }
+    .basic-button{
+        background: white;
+      color: black;
+    }
+  }
+}
+
+@include variables.media(mobile) {
+
+
+
+  .error404 {
+    #main {
+      p{
+        max-width: 24.5rem;
+      }
+      height: auto;
+      padding: 15rem 0;
+      .basic-button{
+        margin: 0;
+      }
+    }
+  }
+  footer {
+    padding-top: 5rem !important;
+  }
+}

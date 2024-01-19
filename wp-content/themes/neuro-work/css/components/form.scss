@@ -1,0 +1,202 @@
+@use 'variables';
+
+.contact-form {
+
+  @mixin valid_style {
+    position: absolute;
+    color: white;
+    background-color: black;
+    height: 8rem;
+    border-radius: 8.4rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+    animation-duration: 0.8s;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    width: 37.8rem;
+    margin: auto;
+    position: relative;
+
+
+    .field {
+      position: relative;
+
+      span {
+        display: flex;
+        position: relative;
+
+        $fields: select, input, textarea;
+
+        @each $field in $fields {
+          #{$field} {
+            @include variables.d_input;
+            flex-grow: 1;
+            border:none;
+            background-color: rgba(white, 60%) !important;
+            background-blend-mode: soft-light;
+            backdrop-filter: blur(6.2rem);
+            border-radius: 2.4rem;
+            height: 8rem;
+            width: 100%;
+            padding: 0 3rem;
+            box-sizing: border-box;
+            color: black;
+            transition: variables.$transition_basic;
+
+            &:before {
+              content:'ff';
+            }
+          }
+
+          #{$field}:focus-visible {
+            outline: none;
+            background-color: rgba(white, 100%) !important;
+          }
+
+          #{$field}::placeholder {
+            color: black;
+          }
+        }
+
+        select {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          padding-left: 9rem;
+          background: url("../../assets/shapes/arrow-down.svg") no-repeat;
+          background-position: right;
+          background-size: 4rem;
+          position: relative;
+
+        }
+
+        textarea {
+          padding-top: 2.4rem;
+          resize: none;
+          transition: variables.$transition_basic;
+
+          &:focus-visible,  &:not(:placeholder-shown)  {
+            height: 21rem;
+          }
+        }
+
+        //Validation
+        .wpcf7-not-valid-tip {
+          @include variables.d_input;
+          @include valid_style;
+          animation-name: valid_enter;
+          top: 0;
+          right: -13rem;
+          padding: 0 3rem;
+
+
+
+          &:before {
+            content: '';
+            background: url("../../assets/shapes/valid_arrow.svg") right no-repeat;
+            background-size:4.85rem ;
+            width: 4.85rem;
+            height: 1.5rem;
+            display: block;
+          }
+
+
+
+          @keyframes valid_enter {
+            from {
+              opacity: 0;
+              right: -10rem;
+            }
+
+            to {
+              opacity: 1;
+              right: -13rem;
+            }
+          }
+        }
+      }
+
+      .select-prefix {
+        position: absolute;
+        @include variables.d_input;
+        color: black;
+        z-index: 1;
+        top:0;
+        bottom:0;
+        left: 3rem;
+        display: flex;
+        align-items: center;
+
+      }
+    }
+
+
+    input[type=submit], .wpcf7 form.failed, .wpcf7-response-output {
+      z-index: 1;
+      position: relative;
+    }
+
+    input[type=submit] {
+      @include variables.basic-button;
+      margin-top: 0 !important;
+    }
+
+    .spinner-con{
+      margin-top: 4rem;
+      .wpcf7-spinner{
+        position: absolute;
+        top:1.2rem
+      }
+    }
+    .wpcf7 form.failed, .wpcf7-response-output {
+      @include variables.d_input;
+      @include valid_style;
+      margin: 0 !important;
+      border: none !important;
+      width: 38rem;
+      bottom: 3.6rem;
+      padding: 0 4rem !important;
+      position: static !important;
+    }
+  }
+
+  @include variables.media(mobile) {
+    form .field span .wpcf7-not-valid-tip {
+      font: normal 200 2rem/138% "Montreal", sans-serif;
+      position: absolute;
+      color: red;
+       background-color:transparent;
+      height: 3rem;
+      border-radius: 8.4rem;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 1rem;
+      animation-duration: 0.8s;
+      animation-name: valid_enter;
+      top: auto;
+      right: -1rem;
+      padding: 0 3rem;
+      bottom: 0;
+      font-size: 1.4rem;
+
+      &:before{
+        display:none;
+      }
+    }
+    form .wpcf7-response-output {
+      width: auto;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+
+

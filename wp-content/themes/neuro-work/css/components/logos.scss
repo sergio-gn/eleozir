@@ -1,0 +1,33 @@
+@use 'variables';
+
+ul.logos {
+  gap: 6.7rem 7.3rem;
+  margin-bottom: 10rem;
+
+  li {
+    height: 6.4rem;
+    width: auto;
+
+    &:nth-child(12n+1) {
+      margin-left: 15rem;
+    }
+
+    &:nth-child(12n+5) {
+      margin-right: 15rem;
+    }
+  }
+}
+
+@include variables.media(mobile) {
+
+  ul.logos {
+    gap: 2.3rem 4.3rem;
+
+    li {
+      height: 3.4rem;
+      margin: 0 !important;
+      flex: 0 0 auto;
+    }
+  }
+
+}

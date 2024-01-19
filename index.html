@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js no-svg">
+<head>
+    <meta property="og:image" content="./wp-content/themes/neuro-work/assets/imgs/share.jpg" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon"> -->
+
+    <script>
+        const style_sheet_url = "./wp-content/themes/neuro-work";
+    </script>
+
+    <!-- <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <script>(function (html) { html.className = html.className.replace(/\bno-js\b/, 'js') })(document.documentElement);</script>
+    <title>Neuro Work</title>
+    <meta name='robots' content='max-image-preview:large' />
+
+    <link rel='stylesheet' id='normalize-css' href='./wp-content/themes/w4_base/css/normalize.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='helpers-css' href='./wp-content/themes/w4_base/css/helpers.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='parent-theme-main-style-css' href='./wp-content/themes/w4_base/style.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='splide-core-css' href='./wp-content/themes/neuro-work/css/vendor/splide-core.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='splide-css' href='./wp-content/themes/neuro-work/css/vendor/splide.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='child-main-css' href='./wp-content/themes/neuro-work/css/generic/theme-style.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='menu-button-css-css' href='./wp-content/themes/neuro-work/css/generic/menu-btn.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='home-css-css' href='./wp-content/themes/neuro-work/css/pages/home.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='animation-styles-css' href='./wp-content/themes/neuro-work/css/generic/animation-styles.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='wp-block-library-css' href='./wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+    <style id='global-styles-inline-css' type='text/css'>
+        body {
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #ffffff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+            --wp--preset--font-size--small: 13px;
+            --wp--preset--font-size--medium: 20px;
+            --wp--preset--font-size--large: 36px;
+            --wp--preset--font-size--x-large: 42px;
+            --wp--preset--spacing--20: 0.44rem;
+            --wp--preset--spacing--30: 0.67rem;
+            --wp--preset--spacing--40: 1rem;
+            --wp--preset--spacing--50: 1.5rem;
+            --wp--preset--spacing--60: 2.25rem;
+            --wp--preset--spacing--70: 3.38rem;
+            --wp--preset--spacing--80: 5.06rem;
+            --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+            --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+            --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+        }
+
+        :where(.is-layout-flex) {
+            gap: 0.5em;
+        }
+
+        :where(.is-layout-grid) {
+            gap: 0.5em;
+        }
+
+        body .is-layout-flow>.alignleft {
+            float: left;
+            margin-inline-start: 0;
+            margin-inline-end: 2em;
+        }
+
+        body .is-layout-flow>.alignright {
+            float: right;
+            margin-inline-start: 2em;
+            margin-inline-end: 0;
+        }
+
+        body .is-layout-flow>.aligncenter {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        body .is-layout-constrained>.alignleft {
+            float: left;
+            margin-inline-start: 0;
+            margin-inline-end: 2em;
+        }
+
+        body .is-layout-constrained>.alignright {
+            float: right;
+            margin-inline-start: 2em;
+            margin-inline-end: 0;
+        }
+
+        body .is-layout-constrained>.aligncenter {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        body .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+            max-width: var(--wp--style--global--content-size);
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        body .is-layout-constrained>.alignwide {
+            max-width: var(--wp--style--global--wide-size);
+        }
+
+        body .is-layout-flex {
+            display: flex;
+        }
+
+        body .is-layout-flex {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        body .is-layout-flex>* {
+            margin: 0;
+        }
+
+        body .is-layout-grid {
+            display: grid;
+        }
+
+        body .is-layout-grid>* {
+            margin: 0;
+        }
+
+        :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-columns.is-layout-grid) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-post-template.is-layout-flex) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-post-template.is-layout-grid) {
+            gap: 1.25em;
+        }
+
+        .has-black-color {
+            color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-color {
+            color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-color {
+            color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-color {
+            color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-color {
+            color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-color {
+            color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-color {
+            color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-color {
+            color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-color {
+            color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-color {
+            color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-color {
+            color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-color {
+            color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-background-color {
+            background-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-background-color {
+            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-background-color {
+            background-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-background-color {
+            background-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-background-color {
+            background-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-background-color {
+            background-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-background-color {
+            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-background-color {
+            background-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-border-color {
+            border-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-border-color {
+            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-border-color {
+            border-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-border-color {
+            border-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-border-color {
+            border-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-border-color {
+            border-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-border-color {
+            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-border-color {
+            border-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+        }
+
+        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+        }
+
+        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+        }
+
+        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+        }
+
+        .has-cool-to-warm-spectrum-gradient-background {
+            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+        }
+
+        .has-blush-light-purple-gradient-background {
+            background: var(--wp--preset--gradient--blush-light-purple) !important;
+        }
+
+        .has-blush-bordeaux-gradient-background {
+            background: var(--wp--preset--gradient--blush-bordeaux) !important;
+        }
+
+        .has-luminous-dusk-gradient-background {
+            background: var(--wp--preset--gradient--luminous-dusk) !important;
+        }
+
+        .has-pale-ocean-gradient-background {
+            background: var(--wp--preset--gradient--pale-ocean) !important;
+        }
+
+        .has-electric-grass-gradient-background {
+            background: var(--wp--preset--gradient--electric-grass) !important;
+        }
+
+        .has-midnight-gradient-background {
+            background: var(--wp--preset--gradient--midnight) !important;
+        }
+
+        .has-small-font-size {
+            font-size: var(--wp--preset--font-size--small) !important;
+        }
+
+        .has-medium-font-size {
+            font-size: var(--wp--preset--font-size--medium) !important;
+        }
+
+        .has-large-font-size {
+            font-size: var(--wp--preset--font-size--large) !important;
+        }
+
+        .has-x-large-font-size {
+            font-size: var(--wp--preset--font-size--x-large) !important;
+        }
+
+        .wp-block-navigation a:where(:not(.wp-element-button)) {
+            color: inherit;
+        }
+
+        :where(.wp-block-post-template.is-layout-flex) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-post-template.is-layout-grid) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-columns.is-layout-grid) {
+            gap: 2em;
+        }
+
+        .wp-block-pullquote {
+            font-size: 1.5em;
+            line-height: 1.6;
+        }
+    </style>
+    <link rel='stylesheet' id='contact-form-7-css' href='./wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.6' type='text/css' media='all' />
+    <link rel='stylesheet' id='w4a_css-css' href='./wp-content/plugins/w4accesability/includes/accesability.css?ver=1' type='text/css' media='all' />
+    <script type='text/javascript' src='./wp-includes/js/jquery/jquery.min.js?ver=3.7.0' id='jquery-core-js'></script>
+    <script type='text/javascript' src='./wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1' id='jquery-migrate-js'></script>
+
+
+
+    <style type="text/css" id="wp-custom-css">
+        body.page-template-space-mission section.bottom-content .basic-grid .d_title_22:before {
+            -webkit-backdrop-filter: blur(62px);
+        }
+
+        section.bdass-ecosystem .product-slider-container ul.product-slider>li:before {
+
+            bottom: -15rem;
+
+            height: 15rem;
+
+        }
+    </style>
+</head>
+
+<body class="home page-template page-template-page-templates page-template-home page-template-page-templateshome-php page page-id-26">
+    <header class="fixed l0 t0 menu-entered ">
+        <div class="basic-grid space-between flex-v-align h100">
+            <div class="space-between flex-v-align w100">
+                <a href="/">
+                    <img class="logo" src="./wp-content/themes/neuro-work/assets/imgs/logo/logo-neurowork.png" alt="Neuro Work logo">
+                </a>
+
+                <nav>
+                    <div class="basic-grid h100 flex-v-align relative">
+                        <div class="absolute w100 t0 l0 news-f-con flex">
+                            <a href="/about/#in-the-press" class="goto-press ">Press Release</a>
+                            <div class="splide news-splide">
+                                <div class="splide__track">
+                                    <ul class="news splide__list">
+                                        <li class="splide__slide">
+                                            <a class="flex"
+                                                href="https://www.reuters.com/technology/israeli-startup-test-brain-activity-gear-space-mission-iss-2022-03-28/"
+                                                target="_blank">2022-03-28&nbsp;&nbsp;&nbsp;Israeli startup to test
+                                                brain-activity gear on...</a>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <a class="flex"
+                                                href="https://www.cnet.com/science/space/ax-1-astronauts-headed-to-iss-will-soon-wear-microgravity-brain-tracking-helmets/"
+                                                target="_blank">2022-04-08&nbsp;&nbsp;&nbsp;Astronaut Helmets Straight
+                                                out of Sci-Fi Could...</a>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <a class="flex"
+                                                href="https://techcrunch.com/2022/03/28/brain-space-remakes-the-eeg-for-our-modern-world-and-soon-off-world/?guccounter=1"
+                                                target="_blank">2022-03-28&nbsp;&nbsp;&nbsp;Neuro Work remakes the EEG
+                                                for our modern...</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex two-columns space-between w100">
+                            <div class="flex-60">
+                                <div class="menu-header-main-container">
+                                    <ul id="menu-header-main" class="menu">
+                                        <li id="menu-item-382"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-26 current_page_item menu-item-382">
+                                            <a href="./" aria-current="page">Home</a></li>
+                                        <li id="menu-item-257"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-257">
+                                            <a href="./technology/">Technology</a></li>
+                                        <li id="menu-item-256"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-256">
+                                            <a href="./solutions/">Solutions</a></li>
+                                        <li id="menu-item-255"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-255">
+                                            <a href="./about/">About</a></li>
+                                        <li id="menu-item-981"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-981">
+                                            <a href="./space-mission/">Space Mission</a></li>
+                                        <li id="menu-item-254"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-254">
+                                            <a href="./contact-us/">Contact us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="flex-30 flex-end">
+                                <div class="menu-header-sub-container">
+                                    <ul id="menu-header-sub" class="menu">
+                                        <li id="menu-item-1110"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1110">
+                                            <a href="./careers/">Careers</a></li>
+                                        <li id="menu-item-1199"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1199">
+                                            <a href="./press-page/">Press</a></li>
+                                        <li id="menu-item-1111"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1111">
+                                            <a href="./terms-of-use/">Terms of use</a></li>
+                                        <li id="menu-item-1112"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1112">
+                                            <a href="./privacy/">Privacy Policy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+        <div class="mobile-menu-btn-grid basic-grid h100 flex">
+            <button id="mobile-menu-btn">
+                <div class="kav kav-1"></div>
+                <div class="kav kav-2"></div>
+                <div class="kav kav-3"></div>
+            </button>
+        </div>
+    </header>
+
+    <div class="row-menu-con absolute w100 l0 t0 ">
+        <div class="basic-grid  flex-v-align h100">
+            <nav class="row-menu">
+                <div class="menu-header-main-container">
+                    <ul id="menu-header-main-1" class="menu">
+                        <li
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-26 current_page_item menu-item-382">
+                            <a href="./" aria-current="page">Home</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-257"><a
+                                href="./technology/">Technology</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-256"><a
+                                href="./solutions/">Solutions</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-255"><a
+                                href="./about/">About</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-981"><a
+                                href="./space-mission/">Space Mission</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-254"><a
+                                href="./contact-us/">Contact us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
+            <section class="hero hero_home relative">
+                <div class="basic-grid flex-v-bottom h100">
+                    <div class="vid-con absolute t0 l0 w100 h100">
+                        <picture>
+                            <source media="(max-width:1024px)" srcset="./wp-content/uploads/2023/09/unnamed-2.jpg">
+                            <img class="poster absolute w100 h100 t0 l0" src="./wp-content/uploads/2023/08/brain.space-HP-HERO.jpg" alt="video poster" />
+                        </picture>
+                        <video class="" autoplay loop muted playsinline
+                            src="./wp-content/uploads/2023/07/main-video.mp4"
+                            data-mobile-webm="./wp-content/uploads/2023/07/brain.space-HERO-SHORT-LR-MOBILE.webm"
+                            data-mobile-mp4="./wp-content/uploads/2023/07/brain.space-HERO-SHORT-LR-MOBILE.mp4">
+                        </video>
+                    </div>
+                    <h1 class="d_title_60 text-white">Nós Somos Neuro Work</h1>
+                    <script>
+                        const texts = ["A Primeira Pós Graduação de Neurofeedback do Brasil", "Sua Formação Avançada em Neurofeedback", "Nós Somos Neuro Work"]        
+                    </script>
+                </div>
+            </section>
+            <section class="main-content">
+                <div class="basic-grid">
+                    <h2 class="d_section_24 text-align-center">The Brain Data Company</h2>
+                    <ul>
+                        <li class="content-image flex space-between two-columns with-vid-mask">
+                            <div class="content flex-50">
+                                <h3 class="headline-text-button f-t d_title_55">
+                                    Creating a new breed of Human AI
+                                </h3>
+                                <p class="headline-text-button d_parag_25">
+                                    We have designed Brain Data collection and
+                                    analysis tools to incorporate the Human element into AI-based technologies.
+                                    This new breed of Human AI presents opportunities for innovation across industries
+                                    and designs solutions based on the human mind.
+                                </p>
+                                <div class="button-holder">
+                                    <a class="basic-button desktop-view" href="./solutions/">
+                                        Explore our solutions
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="image flex-40 sq-img">
+                                <div class="circular-an-stage-holder">
+                                    <div class="circular-an-stage">
+                                        <div class="img-scroller flex">
+                                            <img src="./wp-content/themes/neuro-work/assets/imgs/circular-gradients-loop-2.svg" alt="" role="presentation" aria-hidden="true" class="circ-1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="button-holder">
+                                    <a class="basic-button mobile-view" href="./solutions/">
+                                        Explore our solutions
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="content-image flex space-between two-columns with-vid-mask">
+                            <div class="content flex-50">
+                                <h3 class="headline-text-button f-t d_title_55">
+                                    Bridging the gap between Machine and Human Intelligence
+                                </h3>
+                                <p class="headline-text-button d_parag_25">
+                                    By viewing mental and emotional states as objectively as a blood test, we can categorize, classify and model these patterns to create <strong>Large Brain Models.</strong> These models can predict behaviors, enable personalized experiences, and design tailor-made solutions for humanity.
+                                </p>
+                                <div class="button-holder">
+                                    <a class="basic-button   desktop-view"
+                                        href="./solutions/">Explore our solutions</a>
+                                </div>
+                            </div>
+                            <div class="image flex-40 sq-img">
+                                <div class="vid-con ">
+                                    <video class="" autoplay loop muted playsinline
+                                        data-src="./wp-content/uploads/2023/07/01-brain-2.webm"
+                                        data-mobile-webm="./wp-content/uploads/2023/07/01-brain-2.webm"
+                                        data-mobile-mp4="./wp-content/uploads/2023/07/01-Neuro-Work-mission-loop-LR.mp4"
+                                        poster="./wp-content/uploads/2023/07/01_MISSION_A.jpg">
+                                    </video>
+                                </div>
+                                <div class="button-holder">
+                                    <a class="basic-button   mobile-view"
+                                        href="./solutions/">Explore our solutions</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="introduction bg-container relative">
+                <div class="bg-shapes absolute l0" id="shapes-bg-1">
+                </div>
+                <div class="basic-grid">
+                    <div class="helmet-img">
+                        <h2 class="d_section_24 text-align-center absolute l0 r0 margin-auto">introducing </h2>
+                        <div class="content-image flex space-between flex-column-reverse flex-v-align ">
+                            <div class="content flex-50">
+                                <h3 class="headline-text-button f-t d_title_55  ">The Brain Sensei™ 1.5 headgear</h3>
+                                <p class="headline-text-button d_parag_25  ">Equipped with 115 sensors, the Brain
+                                    Sensei™ 1.5 is a state-of-the-art EEG headgear that delivers real-time, high
+                                    resolution signals to a dashboard designed for researchers.</p>
+                                <div class="button-holder">
+                                    <a class="basic-button desktop-view" href="./technology/">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="image flex-40 sq-img">
+                                <div id="helmet-lottie-holder" style="background-image: url(./wp-content/themes/neuro-work/assets/helmet_lottie/images-webp/img_0.webp)">
+                                    <div id="helmet-lottie"></div>
+                                </div>
+                                <div class="button-holder">
+                                    <a class="basic-button mobile-view" href="./technology/">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="intro-content-row">
+                        <li class="content-image flex space-between two-columns with-vid-mask">
+                            <div class="content flex-50">
+                                <p class="headline-text-button d_parag_30">
+                                    <strong>AutoDonning</strong> technology
+                                    calibrates the sensors to all head shapes and sizes, eliminating the need for a
+                                    technician - making it super simple and fast to operate.
+                                </p>
+                            </div>
+                            <div class="image flex-40 sq-img">
+                                <div class="vid-con">
+                                    <video class="" autoplay loop muted playsinline
+                                        data-src="./wp-content/uploads/2023/07/02-Neuro-Work-sensor-loop_1-1.webm"
+                                        data-mobile-webm="./wp-content/uploads/2023/07/02-Neuro-Work-sensor-loop_1-1.webm"
+                                        data-mobile-mp4="./wp-content/uploads/2023/07/Neuro-Work-sensor-loop-LR.mp4"
+                                        poster="./wp-content/uploads/2023/07/02_AD_A.jpg">
+                                    </video>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="content-image flex space-between two-columns with-vid-mask">
+                            <div class="content flex-50">
+                                <p class="headline-text-button d_parag_30">
+                                    Now, Brain Data collection is possible with minimal setup time (5 minutes as compared to 30 minutes for existing solutions)
+                                </p>
+                                <div class="button-holder">
+                                    <a class="basic-button desktop-view" href="./technology/">Explore Our Technology</a>
+                                </div>
+                            </div>
+                            <div class="image flex-40 sq-img">
+                                <div class="vid-con">
+                                    <video class="" autoplay loop muted playsinline
+                                        data-src="./wp-content/uploads/2023/07/03-brain-2.webm"
+                                        data-mobile-webm="./wp-content/uploads/2023/07/03-brain-2.webm"
+                                        data-mobile-mp4="./wp-content/uploads/2023/07/Neuro Work-sensors-activity-loop-LR.mp4"
+                                        poster="./wp-content/uploads/2023/07/03_AD_B.jpg">
+                                    </video>
+                                </div>
+                                <div class="button-holder">
+                                    <a class="basic-button   mobile-view"
+                                        href="./technology/">Explore Our Technology</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="content-image flex space-between two-columns with-vid-mask">
+                            <div class="content flex-50">
+                                <p class="headline-text-button d_parag_30  "><strong>Brain GPS™</strong> technology
+                                    “maps the brain” and precisely places the sensors on each individual’s unique scalp
+                                    to locate the correct functional areas.</p>
+                            </div>
+                            <div class="image flex-40 sq-img">
+                                <div class="vid-con ">
+                                    <video class="" autoplay loop muted playsinline
+                                        data-src="./wp-content/uploads/2023/07/04-Neuro-Work_.-gps-scans-loop_1-2-1.webm"
+                                        data-mobile-webm="./wp-content/uploads/2023/07/04-Neuro-Work_.-gps-scans-loop_1-2-1.webm"
+                                        data-mobile-mp4="./wp-content/uploads/2023/07/Neuro-Work_.-gps-scans-loop-LR.mp4"
+                                        poster="./wp-content/uploads/2023/07/04_GPS_A.jpg">
+                                    </video>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="content-image flex space-between two-columns with-vid-mask">
+                            <div class="content flex-50">
+                                <p class="headline-text-button d_parag_30  "><strong>Brain GPS™</strong> enables
+                                    standardization of Brain Data for the first time, empowering meaningful and
+                                    cooperative research processes.</p>
+                                <div class="button-holder">
+                                    <a class="basic-button desktop-view"
+                                        href="./technology/">Explore Our Technology</a>
+                                </div>
+                            </div>
+                            <div class="image flex-40 sq-img">
+                                <div class="vid-con ">
+                                    <video class="" autoplay loop muted playsinline
+                                        data-src="./wp-content/uploads/2023/07/Neuro Work-sensei-form-loop-LR.mp4"
+                                        data-mobile-webm=""
+                                        data-mobile-mp4="./wp-content/uploads/2023/07/Neuro Work-sensei-form-loop-LR.mp4"
+                                        poster="./wp-content/uploads/2023/07/04_GPS_C-2.jpg">
+                                    </video>
+                                </div>
+                                <div class="button-holder">
+                                    <a class="basic-button mobile-view"
+                                        href="./technology/">Explore Our Technology</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="ecosystem">
+                <div class="basic-grid">
+                    <h2 class="d_section_24 text-align-center text-white">The ecosystem</h2>
+                    <div class="flex two-columns">
+                        <div class="flex-40 opening-text">
+                            <h2 class="headline-text-button f-t d_title_55 text-white">
+                                Introducing The first ever Brain-Data-as-a-Service platform
+                            </h2>
+                            <p class="headline-text-button d_parag_25 text-white">
+                                Brain-Data-as-a-Service supercharges
+                                the value of brain data, building a shared big data library that can be leveraged for
+                                the value of all participants, while keeping research data anonymous and private.
+                            </p>
+                            <div class="button-holder">
+                                <a class="basic-button text-white  desktop-view"
+                                    href="./contact-us/">Get in Touch</a>
+                            </div>
+                        </div>
+                        <div class="flex-50 eco-slides splide">
+                            <div class="splide__track">
+                                <ul class="flex splide__list">
+                                    <li class="content-image flex space-between flex-column-reverse flex-v-align splide__slide">
+                                        <div class="content flex-50">
+                                            <h3 class="headline-text-button f-t d_title_55  ">The Brain Sensei™</h3>
+                                            <p class="headline-text-button d_parag_22  ">Proprietary hardware: automated
+                                                process non-invasively and accurately collects brain data with the click
+                                                of a button.</p>
+                                        </div>
+                                        <div class="image flex-40 sq-img">
+                                            <picture>
+                                                <source media="(max-width:1023px)" srcset=""><img class=""
+                                                    src="./wp-content/uploads/2023/07/the-brain-sensei-1.png"
+                                                    alt="" loading="lazy" width="616" height="285" />
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="content-image flex space-between flex-column-reverse flex-v-align splide__slide">
+                                        <div class="content flex-50">
+                                            <h3 class="headline-text-button f-t d_title_55  ">Brain Cloud</h3>
+                                            <p class="headline-text-button d_parag_22  ">
+                                                Brain Data is de-noised,
+                                                standardized and automatically tagged by ML models.
+                                            </p>
+                                        </div>
+                                        <div class="image flex-40 sq-img">
+                                            <picture>
+                                                <source media="(max-width:1023px)" srcset=""><img class=""
+                                                    src="./wp-content/uploads/2023/05/Rectangle-346.jpg"
+                                                    alt="" loading="lazy" width="616" height="285" />
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="content-image flex space-between flex-column-reverse flex-v-align splide__slide">
+                                        <div class="content flex-50">
+                                            <h3 class="headline-text-button f-t d_title_55">Brain Analytics</h3>
+                                            <p class="headline-text-button d_parag_22  ">Analytic tools provide two
+                                                levels of Brain Data analysis: clean data for research and Brain
+                                                Insights.</p>
+                                        </div>
+                                        <div class="image flex-40 sq-img">
+                                            <picture>
+                                                <source media="(max-width:1023px)" srcset=""><img class=""
+                                                    src="./wp-content/uploads/2023/05/Group-211476.jpg"
+                                                    alt="" loading="lazy" width="616" height="285" />
+                                            </picture>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-vis">
+                        <div class="slider-vis-track">
+                            <div class="slider-knob"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="headline-text-list_box-button home_bdaas_journey_copy">
+                <div class="basic-grid">
+                    <h2 class="d_title_60 relative">Start your Brain-Data-as-a-Service journey, today.</h2>
+                    <div class="flex two-columns space-between relative">
+                        <p class="d_parag_30 flex-50">Curious to know when your customers experience mental fatigue?
+                            Wondering about the optimal time to acquire new skills? Interested in selecting the perfect
+                            app color for maximizing user engagement?</p>
+                        <div class="d_parag_25 flex-40 flex-column">
+                            <p>With Neuro Work's expert researchers and engineering team, we can assist you in defining
+                                and creating the ideal Brain Data-driven solution, through our BDaaS platform, in one of
+                                two options:
+                            <ol>
+                                <li>ML model to be embedded in your product (no Brain Sensei™ needed).</li>
+                                <li>Neuro Work’s tailor-made dashboard for your needs.</li>
+                            </ol>
+                            </p>
+                        </div>
+                    </div>
+                    <h3 class="d_parag_25_revisit bold relative caps tyu"><strong>Project workflow:</strong></h3>
+                </div>
+                <div class="list-item-container basic-grid relative">
+                    <div class="splide workflow-splide">
+                        <div class="splide__track">
+                            <ul class="list-items relative space-between s-op splide__list">
+                                <li class=" flex-column splide__slide">
+                                    <div class="title-container relative">
+                                        <h3 class="d_title_35">Profiling</h3>
+                                    </div>
+                                    <div class="d_parag_20 relative">Let’s have a cup of coffee. We will map your needs
+                                        and design the custom-tailored workflow.</div>
+                                </li>
+                                <li class=" flex-column splide__slide">
+                                    <div class="title-container relative">
+                                        <h3 class="d_title_35">Model Development</h3>
+                                    </div>
+                                    <div class="d_parag_20 relative">Brain Data is collected, de-noised, standardized
+                                        and automatically labeled in the Brain Cloud.</div>
+                                </li>
+                                <li class=" flex-column splide__slide">
+                                    <div class="title-container relative">
+                                        <h3 class="d_title_35">Deliverable proprietary Human AI models</h3>
+                                    </div>
+                                    <div class="d_parag_20 relative">Providing you with Machine Learning Models based on
+                                        Brain Data, ready for deployment, and customized dashboards delivering the
+                                        desired Brain Insights, enabling you to enhance and accelerate your business.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="basic-grid">
+                    <p class="footer-text d_parag_25_revisit text-align-center relative">
+                        join us on this groundbreaking
+                        journey as we revolutionize the intersection of AI and human cognition
+                    </p>
+                    <div class="button-holder">
+                        <a class="basic-button  center desktop-view" href="./contact-us/">Take me
+                            there</a>
+                    </div>
+                </div>
+            </section>
+            <section class="research">
+                <div class="basic-grid">
+                    <h2 class="d_section_24 text-align-center">Research</h2>
+                    <div class="content-image flex space-between two-columns ">
+                        <div class="content flex-40">
+                            <h3 class="headline-text-button f-t d_title_55  ">Clean Brain Data for Research</h3>
+                            <p class="headline-text-button d_parag_25  ">As the first all-in-one system designed for top
+                                research centers, our AI tools and ML models empower rapid and accurate research
+                                capabilities.</p>
+                        </div>
+                        <div class="image flex-50 sq-img">
+                            <picture>
+                                <source media="(max-width:1023px)" srcset=""><img class=""
+                                    src="./wp-content/uploads/2023/07/DASHBOARD.jpg" alt=""
+                                    loading="lazy" width="809" height="312" />
+                            </picture>
+                        </div>
+                    </div>
+                    <ul class="icons_captions horizontal">
+                        <li>
+                            <picture><img class="" src="./wp-content/uploads/2023/05/icon-01.svg"
+                                    alt="" loading="lazy" width="0" height="0" /></picture>
+                            <div class="d_caption_14 caps">Brain Sensei™ headgear - the industry’s highest quality data
+                                collection tool</div>
+                        </li>
+                        <li>
+                            <picture><img class="" src="./wp-content/uploads/2023/05/icon-02.svg"
+                                    alt="" loading="lazy" width="0" height="0" /></picture>
+                            <div class="d_caption_14 caps">Minimal set-up time - 5 minutes instead of 30</div>
+                        </li>
+                        <li>
+                            <picture><img class="" src="./wp-content/uploads/2023/05/icon-03.svg"
+                                    alt="" loading="lazy" width="0" height="0" /></picture>
+                            <div class="d_caption_14 caps">Accurate & Reliable - using Brain GPS™</div>
+                        </li>
+                        <li>
+                            <picture><img class="" src="./wp-content/uploads/2023/05/icon-04.svg"
+                                    alt="" loading="lazy" width="0" height="0" /></picture>
+                            <div class="d_caption_14 caps">Auto De-noising - removes artifacts from data samples</div>
+                        </li>
+                        <li>
+                            <picture><img class="" src="./wp-content/uploads/2023/05/icon-05.svg"
+                                    alt="" loading="lazy" width="0" height="0" /></picture>
+                            <div class="d_caption_14 caps">Researchers' dashboard - analysis with the push of a button
+                            </div>
+                        </li>
+                        <li>
+                            <picture><img class="" src="./wp-content/uploads/2023/05/icon-06.svg"
+                                    alt="" loading="lazy" width="0" height="0" /></picture>
+                            <div class="d_caption_14 caps">Standardized Brain Data - for cooperative research processes
+                            </div>
+                        </li>
+                        <li>
+                            <picture><img class="" src="./wp-content/uploads/2023/05/icon-07.svg"
+                                    alt="" loading="lazy" width="0" height="0" /></picture>
+                            <div class="d_caption_14 caps">Brain Data for export - collaborate and share with ease</div>
+                        </li>
+                    </ul>
+                    <div class="button-holder">
+                        <a class="basic-button  center desktop-view" href="./solutions/">Explore
+                            Our Solutions</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="insights relative bg-container">
+                <div class="insights-bg"></div>
+                <div class="side-icon"></div>
+                <div class="basic-grid relative z-index-1">
+                    <h2 class="d_section_24 text-align-center">Brain Insights</h2>
+                    <div class="flex two-columns space-between">
+                        <h2 class="d_title_55 flex-40">Brain Insights are actionable data-based indicators of human
+                            behavior</h2>
+                        <div class="flex-50">
+                            <h2 class="headline-text-button f-t d_parag_30  ">Say goodbye to guessing,and hello to
+                                knowing.</h2>
+                            <p class="headline-text-button d_parag_25  ">For the first time, different industries can
+                                accelerate innovation and hyper-personalize products &amp; services based on the user’s
+                                unique Brain Insights.</p>
+                        </div>
+                    </div>
+                    <div class="brain-insights relative">
+                        <h4 class="d_title_30 relative z-index-1">Brain Insights include</h4>
+                        <ul class="icons_captions vertical">
+                            <li class="lottie-list-item" id="lottie-list-item-0">
+                                <div class="icon-lottie" id="icon-0"></div>
+                                <div class="d_caption_14 caps">Anxiety</div>
+                            </li>
+                            <li class="lottie-list-item" id="lottie-list-item-1">
+                                <div class="icon-lottie" id="icon-1"></div>
+                                <div class="d_caption_14 caps">Cognitive Load</div>
+                            </li>
+                            <li class="lottie-list-item" id="lottie-list-item-2">
+                                <div class="icon-lottie" id="icon-2"></div>
+                                <div class="d_caption_14 caps">Desire</div>
+                            </li>
+                            <li class="lottie-list-item" id="lottie-list-item-3">
+                                <div class="icon-lottie" id="icon-3"></div>
+                                <div class="d_caption_14 caps">Determination</div>
+                            </li>
+                            <li class="lottie-list-item" id="lottie-list-item-4">
+                                <div class="icon-lottie" id="icon-4"></div>
+                                <div class="d_caption_14 caps">Engagement</div>
+                            </li>
+                            <li class="lottie-list-item" id="lottie-list-item-5">
+                                <div class="icon-lottie" id="icon-5"></div>
+                                <div class="d_caption_14 caps">Euphoria</div>
+                            </li>
+                            <li class="lottie-list-item" id="lottie-list-item-6">
+                                <div class="icon-lottie" id="icon-6"></div>
+                                <div class="d_caption_14 caps">Focus</div>
+                            </li>
+                            <li class="lottie-list-item" id="lottie-list-item-7">
+                                <div class="icon-lottie" id="icon-7"></div>
+                                <div class="d_caption_14 caps">Mental Fatigue</div>
+                            </li>
+                            <li class="lottie-list-item" id="lottie-list-item-8">
+                                <div class="icon-lottie" id="icon-8"></div>
+                                <div class="d_caption_14 caps">Reaction Time</div>
+                            </li>
+                            <li class="lottie-list-item" id="lottie-list-item-9">
+                                <div class="icon-lottie" id="icon-9"></div>
+                                <div class="d_caption_14 caps">Resilience</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content-image flex space-between two-columns ">
+                        <div class="content flex-40">
+                            <h3 class="headline-text-button f-t d_title_55  ">Integrating with peripheral sensors</h3>
+                            <p class="headline-text-button d_parag_25  ">Integrating our EEG monitoring technology with
+                                peripheral sensors –such as eye tracking, <span style="font-weight: 400;">ECG</span> and
+                                GSR– will allow us to infer the subject’s mental state from smart devices.
+                            <ul>
+                                <li>Built-in turnkey solution for selected sensors</li>
+                                <li>Standard synchronization via LSL for other solutions</li>
+                                <li>Full paradigm integration</li>
+                                <li>Millisecond synchronization</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="image flex-40 sq-img">
+                            <picture>
+                                <source media="(max-width:1023px)" srcset=""><img class=""
+                                    src="./wp-content/uploads/2023/07/peripheral-sensors.png"
+                                    alt="" loading="lazy" width="592" height="679" />
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="space-mission relative flex-column flex-center-all">
+                <ul class="logos flex-v-align absolute t0 r0">
+                    <li>
+                        <picture><img class="" src="./wp-content/uploads/2023/05/NASA.png" alt=""
+                                loading="lazy" width="132" height="104" /></picture>
+                    </li>
+                    <li>
+                        <picture><img class="" src="./wp-content/uploads/2023/05/AXIUM.png" alt=""
+                                loading="lazy" width="196" height="104" /></picture>
+                    </li>
+                    <li>
+                        <picture><img class="" src="./wp-content/uploads/2023/05/RAKIA.png" alt=""
+                                loading="lazy" width="196" height="104" /></picture>
+                    </li>
+                </ul>
+                <h2 class="d_section_24 text-align-center relative z-index-1">Space Mission</h2>
+                <div class="content-image flex space-between two-columns relative z-index-1">
+                    <div class="content flex-40">
+                        <h3 class="headline-text-button f-t d_title_55 gradient-text  ">Neuro Work in space</h3>
+                        <p class="headline-text-button d_parag_25  ">Chosen by NASA, Neuro Work established itself as a
+                            pioneer in building the standard for monitoring neuro wellness in space. We proved that our
+                            technology works in the harsh conditions of outer space, can be operated autonomously by the
+                            astronauts, and can collect and provide excellent data.</p>
+                        <div class="button-holder">
+                            <a class="link   desktop-view" href="./space-mission/">Learn more
+                                about our groundbreaking mission to the International Space Station. </a>
+                        </div>
+                    </div>
+                    <div class="image flex-40 sq-img">
+                        <div class="vid-con w100">
+                            <video class="" autoplay loop muted playsinline
+                                data-src="./wp-content/uploads/2023/07/BrainSpace-in-Space-Capsule_1-1.webm"
+                                data-mobile-webm=""
+                                data-mobile-mp4="./wp-content/uploads/2023/07/BrainSpace-in-Space-Capsule-LR-1.mp4"
+                                poster="./wp-content/uploads/2023/07/06_SPACE.png">
+                            </video>
+                        </div>
+                        <div class="button-holder">
+                            <a class="basic-button   mobile-view" href="./space-mission/">Learn
+                                more about our groundbreaking mission to the International Space Station. </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="partnership">
+                <div class="basic-grid">
+                    <h2 class="d_section_24 text-align-center relative z-index-1">partnerships</h2>
+                    <ul class="logos flex-v-align flex-wrap justify-center">
+                        <li>
+                            <picture><img class="" src="./wp-content/uploads/2023/05/LOGO-01.png"
+                                    alt="" loading="lazy" width="132" height="64" /></picture>
+                        </li>
+                        <li>
+                            <picture><img class="" src="./wp-content/uploads/2023/05/LOGO-02.png"
+                                    alt="" loading="lazy" width="132" height="64" /></picture>
+                        </li>
+                        <li>
+                            <picture><img class="" src="./wp-content/uploads/2023/05/LOGO-03.png"
+                                    alt="" loading="lazy" width="132" height="64" /></picture>
+                        </li>
+                        <li>
+                            <picture><img class="" src="./wp-content/uploads/2023/05/LOGO-04.png"
+                                    alt="" loading="lazy" width="132" height="64" /></picture>
+                        </li>
+                        <li>
+                            <picture><img class="" src="./wp-content/uploads/2023/05/LOGO-05.png"
+                                    alt="" loading="lazy" width="132" height="64" /></picture>
+                        </li>
+                        <li>
+                            <picture><img class="" src="./wp-content/uploads/2023/05/LOGO-8.png"
+                                    alt="" loading="lazy" width="132" height="64" /></picture>
+                        </li>
+                        <li>
+                            <picture><img class="" src="./wp-content/uploads/2023/05/LOGO-9-1.png"
+                                    alt="" loading="lazy" width="132" height="64" /></picture>
+                        </li>
+                        <li>
+                            <picture><img class="" src="./wp-content/uploads/2023/05/LOGO-9.png"
+                                    alt="" loading="lazy" width="132" height="64" /></picture>
+                        </li>
+                        <li>
+                            <picture><img class=""
+                                    src="./wp-content/uploads/2023/05/LOGO-10-1.png" alt=""
+                                    loading="lazy" width="132" height="64" /></picture>
+                        </li>
+                        <li>
+                            <picture><img class="" src="./wp-content/uploads/2023/05/LOGO-10.png"
+                                    alt="" loading="lazy" width="132" height="64" /></picture>
+                        </li>
+                        <li>
+                            <picture><img class="" src="./wp-content/uploads/2023/05/LOGO-11.png"
+                                    alt="" loading="lazy" width="132" height="64" /></picture>
+                        </li>
+                    </ul>
+                    <p class="headline-text-button d_parag_new_25  center">We’re proud to partner with leading
+                        institutions and businesses across the world. Interested to explore a partnership?</p>
+
+                    <div class="button-holder">
+                        <a class="basic-button  center desktop-view" href="./contact-us/">Get in
+                            Touch</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact home_contact relative">
+                <div class="basic-grid">
+                    <div class="flex two-columns space-between">
+                        <div class="flex-40">
+                            <h2 class="headline-text-button f-t d_title_55 relative z-index-1 text-white ">Contact us
+                            </h2>
+                            <p class="headline-text-button d_parag_25 relative z-index-1 text-white ">We would love to
+                                learn about your needs and explore how Neuro Work solutions can help. Please provide
+                                your details and we’ll follow up.</p>
+                        </div>
+                        <div class="contact-form flex-50 ">
+                            <div class="wpcf7 no-js" id="wpcf7-f234-p26-o1" lang="en-US" dir="ltr">
+                                <div class="screen-reader-response">
+                                    <p role="status" aria-live="polite" aria-atomic="true"></p>
+                                    <ul></ul>
+                                </div>
+                                <form action="/#wpcf7-f234-p26-o1" method="post" class="wpcf7-form init"
+                                    aria-label="Contact form" novalidate="novalidate" data-status="init">
+                                    <div style="display: none;">
+                                        <input type="hidden" name="_wpcf7" value="234" />
+                                        <input type="hidden" name="_wpcf7_version" value="5.8.6" />
+                                        <input type="hidden" name="_wpcf7_locale" value="en_US" />
+                                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f234-p26-o1" />
+                                        <input type="hidden" name="_wpcf7_container_post" value="26" />
+                                        <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+                                    </div>
+                                    <div class="field">
+                                        <div class="select-prefix">I'm...</div>
+                                        <span class="wpcf7-form-control-wrap" data-name="Role"><select
+                                                class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
+                                                aria-required="true" aria-invalid="false" name="Role">
+                                                <option value="an Entrepreneur">an Entrepreneur</option>
+                                                <option value="a Partner">a Partner</option>
+                                                <option value="an Employee">an Employee</option>
+                                                <option value="Other">Other</option>
+                                            </select></span>
+
+                                        <label class="visuallyhidden" for="Context ">I'm...</label>
+                                    </div>
+
+                                    <div class="field">
+                                        <span class="wpcf7-form-control-wrap" data-name="full-name"><input size="40"
+                                                class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                aria-required="true" aria-invalid="false" placeholder="Full Name"
+                                                value="" type="text" name="full-name" /></span>
+                                        <label class="visuallyhidden" for="full-name">Full Name</label>
+                                    </div>
+
+                                    <div class="field">
+                                        <span class="wpcf7-form-control-wrap" data-name="Company"><input size="40"
+                                                class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                aria-required="true" aria-invalid="false" placeholder="Company" value=""
+                                                type="text" name="Company" /></span>
+                                        <label class="visuallyhidden" for="company">Company</label>
+                                    </div>
+
+                                    <div class="field">
+                                        <span class="wpcf7-form-control-wrap" data-name="Email"><input size="40"
+                                                class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
+                                                aria-required="true" aria-invalid="false" placeholder="Email" value=""
+                                                type="email" name="Email" /></span>
+                                        <label class="visuallyhidden" class="Email" for="email">Email</label>
+                                    </div>
+
+                                    <div class="field">
+                                        <span class="wpcf7-form-control-wrap" data-name="Phone"><input size="40"
+                                                class="wpcf7-form-control wpcf7-text" aria-invalid="false"
+                                                placeholder="Phone" value="" type="text" name="Phone" /></span>
+                                        <label class="visuallyhidden" for=phone ">Phone</label>
+                                    </div>
+                                    <div class=" field">
+                                            <span class="wpcf7-form-control-wrap" data-name="Context"><input size="40"
+                                                    class="wpcf7-form-control wpcf7-text" aria-invalid="false"
+                                                    placeholder="Role" value="" type="text" name="Context" /></span>
+                                            <label class="visuallyhidden" for="role">I'm a...</label>
+                                    </div>
+
+                                    <div class="field">
+                                        <span class="wpcf7-form-control-wrap" data-name="Message"><textarea cols="40"
+                                                rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"
+                                                placeholder="Message" name="Message"></textarea></span>
+                                        <label class="visuallyhidden" for="message">Message</label>
+                                    </div>
+
+                                    <div class="spinner-con relative">
+                                        <input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit"
+                                            value="Send" />
+                                    </div>
+                                    <div class="wpcf7-response-output" aria-hidden="true"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main><!-- .site-main -->
+    </div><!-- .content-area -->
+
+    <footer class="relative">
+        <div class="basic-grid space-between h100">
+            <div class="contact-box absolute lo">
+                <div class="d_parag_23 relative">
+                    Endereco
+                </div>
+            </div>
+            <div class="space-between flex-column">
+                <a href="https://www.Neuro Work">
+                    <img class="logo "
+                        src="./wp-content/themes/neuro-work/assets/imgs/logo/logo-black_Neuro Work.svg"
+                        loading="lazy" alt="Neuro Work logo">
+                </a>
+                <div class="copyrights desktop">©2023 Neuro Work </div>
+            </div>
+            <div class="menus space-between flex-column flex-end">
+                <div class="menu-footer-container">
+                    <ul id="menu-footer" class="menu">
+                        <li id="menu-item-274"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-274"><a
+                                href="./about/">About</a></li>
+                        <li id="menu-item-275"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-275"><a
+                                href="./space-mission/">Space Mission</a></li>
+                        <li id="menu-item-276"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-276"><a
+                                href="./careers/">Careers</a></li>
+                        <li id="menu-item-277"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-277"><a
+                                href="./technology/">Technology</a></li>
+                        <li id="menu-item-278"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-278"><a
+                                href="./solutions/">Solutions</a></li>
+                        <li id="menu-item-1198"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1198"><a
+                                href="./press-page/">Press</a></li>
+                        <li id="menu-item-280"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-280"><a
+                                href="./contact-us/">Contact us</a></li>
+                        <li id="menu-item-281"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-281"><a
+                                href="./terms-of-use/">Terms of use</a></li>
+                        <li id="menu-item-282"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-282"><a
+                                href="./privacy/">Privacy Policy</a></li>
+                        <li id="menu-item-1095"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1095"><a
+                                href="./accessibility-statement/">Accessibility Statement</a></li>
+                    </ul>
+                </div>
+                <div class="menu-social-container">
+                    <ul id="menu-social" class="menu">
+                        <li id="menu-item-283"
+                            class="facebook menu-item menu-item-type-custom menu-item-object-custom menu-item-283"><a
+                                target="_blank" rel="noopener" href="https://www.facebook.com/GoBrainspace"><span
+                                    class="visuallyhidden">Facebook</span></a></li>
+                        <li id="menu-item-284"
+                            class="twitter menu-item menu-item-type-custom menu-item-object-custom menu-item-284"><a
+                                target="_blank" rel="noopener" href="https://twitter.com/go_brain_space"><span
+                                    class="visuallyhidden">Twitter</span></a></li>
+                        <li id="menu-item-285"
+                            class="instagram menu-item menu-item-type-custom menu-item-object-custom menu-item-285"><a
+                                target="_blank" rel="noopener" href="https://www.instagram.com/goNeuro Work"><span
+                                    class="visuallyhidden">Instagram</span></a></li>
+                        <li id="menu-item-286"
+                            class="linkedin menu-item menu-item-type-custom menu-item-object-custom menu-item-286"><a
+                                target="_blank" rel="noopener"
+                                href="https://www.linkedin.com/company/gobrainspace"><span
+                                    class="visuallyhidden">Linkedin</span></a></li>
+                        <li id="menu-item-287"
+                            class="youtube menu-item menu-item-type-custom menu-item-object-custom menu-item-287"><a
+                                target="_blank" rel="noopener"
+                                href="https://www.youtube.com/channel/UCTXAYNrj7GQUjzSCWrvUcqQ"><span
+                                    class="visuallyhidden">YouTube</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyrights mobile">©2023 Neuro Work </div>
+        </div>
+    </footer>
+    <span class="cursor"></span>
+    <script type='text/javascript'
+        src='./wp-content/themes/w4_base/js/vendor/modernizr-2.8.3.min.js'
+        id='modernizr-js'></script>
+    <script type='text/javascript' src='./wp-content/themes/w4_base/js/vendor/SmoothScroll.min.js' id='SmoothScroll-js'></script>
+    <script type='text/javascript' src='./wp-content/themes/w4_base/js/basic-ui.min.js'
+        id='basic-ui-js'></script>
+    <script type='text/javascript' id='parent-theme-main-scripts-js-extra'>
+        /* <![CDATA[ */
+        var my_ajax_object = { "ajax_url": "https:\/\/www.Neuro Work\/wp-admin\/admin-ajax.php", "home_url": "https:\/\/www.Neuro Work" };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='./wp-content/themes/w4_base/js/main.min.js'
+        id='parent-theme-main-scripts-js'></script>
+    <script type='text/javascript'
+        src='./wp-content/themes/neuro-work/js/vendor/splide.js' id='splide-js'></script>
+    <script type='text/javascript'
+        src='./wp-content/themes/neuro-work/js/vendor/gsap.min.js' id='gsap-js'></script>
+    <script type='text/javascript'
+        src='./wp-content/themes/neuro-work/js/vendor/ScrollTrigger.min.js'
+        id='gsap-scrolltrigger-js'></script>
+    <!-- <script type='text/javascript' src='./wp-content/themes/neuro-work/js/vendor/TextPlugin.min.js' id='gsap-text-js'></script> -->
+    <script type='text/javascript' src='./wp-content/themes/neuro-work/js/main.js'
+        id='child-main-scripts-js'></script>
+    <script type='text/javascript' src='./wp-content/themes/neuro-work/js/menu-btn.js'
+        id='menu-button-js-js'></script>
+    <script type='text/javascript' src='./wp-content/themes/neuro-work/js/vendor/lottie.min.js' id='lottie-js'></script>
+    <script type='text/javascript'
+        src='./wp-content/themes/neuro-work/js/vendor/three.min.js'
+        id='three-js-js'></script>
+    <script type='text/javascript'
+        src='./wp-content/themes/neuro-work/js/vendor/vanta.fog.min.js'
+        id='vanta-js-fog-js'></script>
+    <script type='text/javascript'
+        src='./wp-content/themes/neuro-work/js/controllers/home-animations.js'
+        id='home-animation-js'></script>
+    <script type='text/javascript'
+        src='./wp-content/themes/neuro-work/js/text-animations.js'
+        id='text-animation-script-js'></script>
+
+    <script type='text/javascript'
+        src='./wp-content/plugins/w4accesability/includes/accesability.js'
+        id='w4a_scripts-js'></script>
+
+</body>
+
+</html>

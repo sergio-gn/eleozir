@@ -1,0 +1,73 @@
+@use 'variables';
+@use 'headline_text_button';
+@use 'button';
+
+//Desktop
+li.content-image {
+
+  &:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+.content-image {
+
+  .image {
+    width: 100%;
+  }
+
+  &.flex-column-reverse {
+
+    .image {
+      margin-bottom: 6.6rem;
+    }
+  }
+
+  &.flex-column {
+
+    .content {
+      margin-bottom: 6.6rem;
+      @include variables.parag_indent;
+    }
+  }
+
+  .content {
+    ul {
+      @include variables.bullet-list;
+      text-transform: uppercase;
+      margin-top: 6rem;
+    }
+  }
+}
+
+//Mobile
+
+@include variables.media(mobile) {
+  .loop-long-switch{
+    .play ,.play.stop{
+      width: 4.2rem;
+      height: 4.2rem;
+      background-size: 2rem;
+
+    }
+  }
+
+
+  .content-image {
+    margin-bottom: 6rem!important;
+
+    &.flex-column {
+
+      .content {
+        margin-bottom: 1.6rem;
+      }
+    }
+
+    &.flex-column-reverse {
+      flex-direction: column;
+    }
+
+  }
+}
+
+

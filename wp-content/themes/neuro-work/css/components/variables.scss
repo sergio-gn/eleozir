@@ -1,0 +1,362 @@
+//import icons functions
+@mixin font-face($family, $src, $weight, $style) {
+  @font-face {
+    font-family: $family;
+    src: url($src);
+    font-weight: $weight;
+    font-style: $style;
+
+  }
+}
+
+
+
+//Queries
+@mixin media($breakpoint) {
+  @if($breakpoint == 'mobile') {
+    @media only screen and (max-width: 1023px) {
+      @content;
+    }
+  }
+}
+
+
+$font_main: 'Archia', sans-serif;
+$font_secondary:  'Montreal', sans-serif;
+$icons:'Icons';
+
+
+//colors
+$light_grey: #C9C9C9;
+$grey: #AAB0BB;
+$dark_grey: #999EAC;
+$light_purple: #DFDEFF;
+$light_blue: #C3E6FE;
+$light_fuchsia: #FFD8CE;
+
+
+
+
+//Gradient
+$gradient_grey: linear-gradient(180deg, #A5ACB7 0%, rgba(244, 244, 244, 0.61) 110.07%);
+$gradient_purple-bordeaux: linear-gradient(269.59deg, #8280D8 17.02%, #C77B76 92.49%);
+
+//Shapes
+
+:root {
+  --br_bg_shapes: 10rem;
+  --br_bg_image: 2.4rem;
+  --br_inner_wrap: 2.4rem;
+}
+
+@include media(mobile) {
+  :root {
+    --br_bg_shapes: 4rem;
+    --br_bg_image: 1.3rem;
+  }
+}
+
+$br_bg_shapes: 10rem;
+$br_image: 2.4rem;
+$br_inner_wrap: 4rem;
+
+
+//Type Variables
+@mixin d_input {
+  font: normal 200 2.2rem/138% $font-secondary;
+}
+
+@mixin d_menu_header {
+  font: normal 200 8.4rem/126% $font_secondary;
+  letter-spacing: 0.42rem;
+  text-transform: uppercase;
+  color: white;
+
+  @include media(mobile) {
+    font: normal 200 3.4rem/135% $font_secondary;
+  }
+}
+@mixin d_menu_header_sub {
+  font: normal 200 2.9rem/193% $font_secondary;
+  letter-spacing: 0.058rem;
+  text-transform: uppercase;
+  color: white;
+}
+@mixin d_menu_header_row {
+    font: normal 500 1.4rem/121% $font_main;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: white;
+}
+
+@mixin d_menu_footer {
+  font: normal 500 1.2rem/116% $font_secondary;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: black;
+}
+
+@mixin d_title_60 {
+  font: normal 200 6rem/123% $font-main;
+
+  @include media(mobile) {
+    font-size: 3.2rem;
+    font-weight: 300;
+  }
+}
+
+@mixin d_title_40 {
+  font: normal 300 4rem/123% $font-secondary;
+}
+
+@mixin d_title_55_mobile {
+  font-size: 3.2rem;
+  line-height: 150%;
+  margin-bottom: 4rem;
+}
+
+@mixin d_parag_40 {
+  font: normal 300 4rem/135%  $font_main;
+  letter-spacing: 0.02em;
+  color: black;
+}
+
+@mixin d_parag_new_25 {
+  font: normal 300 2.5rem/142% $font-main;
+}
+
+@mixin d_caption_14 {
+  font: normal 300 1.4rem/154% $font_main;
+}
+
+@mixin count_numbers {
+  font: normal 200 4.1rem/120% $font_main;
+  letter-spacing: -0.05em;
+}
+
+@mixin side-type-stroke($height, $width, $alignment:null) {
+  display: flex;
+
+  &:before {
+    content: "";
+    height: $height+rem;
+    background-color: white;
+    display: block;
+    width: $width+rem;
+    flex: 0 0 $width+rem;
+    margin-right: 1rem;
+  }
+
+
+  @include media(mobile) {
+
+    @if($alignment == 'center') {
+      position: relative;
+
+      &:before {
+        top:0;
+        bottom: 0;
+        left: -1rem;
+        margin: 0;
+        position: absolute;
+        flex: none;
+      }
+    } @else {
+
+      &:before {
+        height:  4rem;
+        flex: 0 0 0.2rem;
+        position: unset;
+      }
+    }
+  }
+}
+
+// Animation Variables
+$transition_basic: 0.3s all;
+
+//Components Variables
+@mixin basic-button {
+  font: normal 300 2rem/135% $font_secondary;
+  text-align: center;
+  color: black;
+  background: transparent;
+  border: 0.2rem solid black;
+  letter-spacing: 0.05em;
+  border-radius: 4rem;
+  height: 5.4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3rem;
+  margin-top: 4rem;
+  align-self: baseline;
+  opacity: 1;
+  transition: $transition_basic;
+
+  &:hover {
+    opacity: 0.4;
+  }
+}
+
+@mixin side-icon-shapes($icon) {
+
+  &:before, &:after {
+    content: '';
+    left: 0;
+    position: absolute;
+  }
+
+  &:before {
+    background: url("../../assets/imgs/side-shape-icons/#{$icon}.svg") no-repeat center;
+    background-size: 8.6rem;
+    background-color: black;
+    width: 14.9rem;
+    height: 14.9rem;
+    border-radius: 100%;
+    top: 0;
+    z-index: 1;
+  }
+
+  &:after {
+    background: url("../../assets/substracts/shape_corner_substract.svg") no-repeat center;
+    background-size:29.4rem;
+    width: 29.4rem;
+    height: 29.5rem;
+    top: -0.1rem;
+  }
+
+  @include media(mobile) {
+
+    &:before {
+      background-size: 3rem;
+      width: 6rem;
+      height: 6rem;
+      left: 2.5rem;
+    }
+
+    &:after {
+      background: url("../../assets/substracts/shape_corner_substract-mobile.svg") no-repeat center;
+      background-size: 15.2rem;
+      width: 15.2rem;
+      height: 12.0rem;
+    }
+  }
+
+}
+
+@mixin bg-shape-gradient($bg-color, $bg-gradient, $bg-gradient-mobile) {
+  background: $bg-color;
+  backdrop-filter: blur(87px);
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    background: $bg-gradient;
+    filter: blur(217px);
+    background-size: 101vw;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    position: absolute;
+    border-radius: var(--br_bg_shapes);
+  }
+
+  @include media(mobile) {
+    &:before {
+      background: $bg-gradient-mobile;
+    }
+  }
+}
+
+@mixin center-icon-shapes($shape, $width, $height) {
+
+  &:after {
+    content: '';
+    width: $width+rem;
+    height: $height+rem;
+    background-size: $width+rem !important;
+    position: absolute;
+    background: url("../../assets/substracts/#{$shape}.svg") no-repeat center;
+    top: -0.1rem;
+    left:0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+  }
+
+  @include media(mobile) {
+
+    &:after {
+      display:none
+    }
+  }
+}
+
+@mixin svg-mask ($width, $height,$url, $background) {
+  width: $width;
+  height: $height;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $width;
+    height: $height;
+    backdrop-filter: blur(62px);
+    -webkit-mask-image: url($url);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100%;
+    background:  $background;
+  }
+}
+
+@mixin round_bg_text($bg) {
+  padding: 2rem 3.5rem;
+  border-radius: 4rem;
+  background: $bg;
+}
+
+@mixin bullet-list {
+  @include d_caption_14;
+
+  li {
+    border-top: 0.1rem solid black;
+    padding: 2rem 0;
+  }
+}
+
+
+//Layout variables
+
+@mixin basic-grid {
+  max-width: 143.7rem;
+  margin: auto;
+  padding: 0 3%;
+}
+
+@mixin basic-grid-mobile {
+  width: 100%;
+  padding: 0 2.5rem;
+  box-sizing: border-box;
+}
+
+@mixin parag_indent {
+  max-width: 110rem;
+  margin-right: auto;
+
+  @include media(mobile) {
+    max-width: 100%;
+    margin-left: auto;
+  }
+}
+
+
+
+
+

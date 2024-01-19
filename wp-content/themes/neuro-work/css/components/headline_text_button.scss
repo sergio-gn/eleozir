@@ -1,0 +1,21 @@
+@use 'variables';
+
+.headline-text-button {
+
+  &.d_title_60 {
+    margin-bottom: 4rem;
+  }
+
+  &.center {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+
+    @include variables.media(mobile) {
+      width: 100%;
+
+  }
+
+  }
+
+}

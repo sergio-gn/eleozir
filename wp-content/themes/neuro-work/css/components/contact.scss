@@ -1,0 +1,31 @@
+@use 'variables';
+@use 'form';
+
+section.contact {
+  overflow: hidden;
+  border-radius: 0 0 var(--br_bg_shapes) var(--br_bg_shapes);
+  height: 124.75rem;
+  padding: 22rem 0;
+}
+
+@include variables.media(mobile) {
+
+  section.contact {
+    padding: 7rem 0 4rem 0;;
+    height: auto;
+    margin-bottom: 5rem;
+
+    .contact-form {
+
+      form {
+        width: 100%;
+      }
+    }
+
+    &:after {
+      display: none;
+    }
+  }
+
+}
+
